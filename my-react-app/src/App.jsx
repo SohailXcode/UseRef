@@ -1,24 +1,14 @@
-import { useRef } from "react"
+import UseRef_ex_2 from "./UseRef_ex_2"
+import UseRef_Example from "./UseRef_Example"
 
 
 function App() {
    
-  const inputRef = useRef();
-
-  const focusInput = ()=>{
-    inputRef.current.focus();
-  }
-
-  return (
-   <div style={{padding: "20px"}}>
-    <h1>UseRef Example</h1>
-
-    <input type="text" ref={inputRef} placeholder="Enter Your Name"/>
-    <br /><br />
-
-    <button onClick={focusInput}>Focus Input</button>
-   </div>
-  )
+ return(
+<div>
+  <UseRef_Example/>
+  <UseRef_ex_2/>
+</div>
+ )
 }
-
 export default App
